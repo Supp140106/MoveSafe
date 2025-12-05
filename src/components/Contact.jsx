@@ -43,7 +43,7 @@ export default function ProfessionalContact() {
                         Call Us
                       </h3>
                       <p className="block text-xs text-gray-100">
-                        +91 98765 43211
+                        +91 98127 18379
                       </p>
                     </div>
                   </div>

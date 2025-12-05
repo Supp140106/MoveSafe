@@ -36,25 +36,7 @@ export default function TrustBar() {
                     </div>
                 </div>
 
-                {/* Certifications Strip */}
-                <div className="py-6 border-t border-gray-100 bg-gray-50">
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-                        <div className="flex items-center space-x-2">
-                            <CheckCircle className="w-5 h-5 text-green-600" />
-                            <span className="font-bold text-gray-700 text-sm">ISO 9001:2015 Certified</span>
-                        </div>
-                        <div className="h-4 w-px bg-gray-300 hidden md:block"></div>
-                        <div className="flex items-center space-x-2">
-                            <Award className="w-5 h-5 text-blue-600" />
-                            <span className="font-bold text-gray-700 text-sm">IBA Approved</span>
-                        </div>
-                        <div className="h-4 w-px bg-gray-300 hidden md:block"></div>
-                        <div className="flex items-center space-x-2">
-                            <ShieldCheck className="w-5 h-5 text-purple-600" />
-                            <span className="font-bold text-gray-700 text-sm">Govt. Registered</span>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     );

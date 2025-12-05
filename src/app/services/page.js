@@ -86,10 +86,7 @@ export default function ServicesPage() {
             />
             <main className="min-h-screen bg-white">
                 <Header />
-                <div className="pt-28 pb-2 bg-secondary-50 text-center">
-                    <h1 className="text-4xl font-bold text-black">Our Services</h1>
-                    <p className="text-[#082f49] mt-2">Professional moving solutions for every need</p>
-                </div>
+
                 <Services />
                 <Testimonials />
                 <Footer />

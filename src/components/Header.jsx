@@ -61,10 +61,10 @@ export default function Header() {
             <div className="flex flex-col items-end mr-2">
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Support</span>
               <a
-                href="tel:+911244718888"
+                href="tel:+919812718379"
                 className="text-sm font-bold text-white hover:text-primary-600 transition-colors"
               >
-                +91 124 471 8888
+                +91 98127 18379
               </a>
             </div>
             <Link href="#quote" className="btn-primary text-sm px-6 py-2.5">

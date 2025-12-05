@@ -61,39 +61,7 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Industry Standards Strip */}
-                <div className="border-t border-b border-gray-100 py-8">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        <div className="flex flex-col items-center justify-center">
-                            <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mb-3">
-                                <CheckCircle className="w-6 h-6 text-green-600" />
-                            </div>
-                            <h4 className="text-black font-bold mb-1">ISO 9001:2015</h4>
-                            <p className="text-xs text-gray-500">Certified Quality</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-3">
-                                <Package className="w-6 h-6 text-blue-600" />
-                            </div>
-                            <h4 className="text-black font-bold mb-1">IBA Approved</h4>
-                            <p className="text-xs text-gray-500">Bank Verified Bills</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center mb-3">
-                                <Clock className="w-6 h-6 text-orange-600" />
-                            </div>
-                            <h4 className="text-black font-bold mb-1">On-Time Delivery</h4>
-                            <p className="text-xs text-gray-500">GPS Tracked Fleet</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <div className="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center mb-3">
-                                <Users className="w-6 h-6 text-purple-600" />
-                            </div>
-                            <h4 className="text-black font-bold mb-1">Verified Staff</h4>
-                            <p className="text-xs text-gray-500">Background Checked</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     );
