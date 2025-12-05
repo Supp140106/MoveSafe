@@ -3,6 +3,20 @@ import Footer from '@/components/Footer';
 import About from '@/components/About';
 import WhyChooseUs from '@/components/WhyChooseUs';
 
+export const metadata = {
+    title: "About Us - Our Story & Mission",
+    description: "Learn about MoveSafe Packers & Movers - India's trusted relocation company with 15+ years of experience. Discover our mission, values, and commitment to safe, reliable moving services.",
+    keywords: ["about movesafe packers", "packers and movers company", "relocation company India", "trusted movers", "moving company history"],
+    openGraph: {
+        title: "About MoveSafe Packers & Movers - Our Story",
+        description: "Discover why MoveSafe is India's most trusted moving company. 15+ years of experience, 500+ happy customers daily.",
+        url: "https://movesafepackers.com/about",
+    },
+    alternates: {
+        canonical: "/about",
+    },
+};
+
 export default function AboutPage() {
     return (
         <main className="min-h-screen bg-white">
@@ -17,3 +31,4 @@ export default function AboutPage() {
         </main>
     );
 }
+
