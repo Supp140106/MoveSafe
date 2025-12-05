@@ -71,3 +71,9 @@
     /* secondary-200 */
   }
 }
+
+@keyframes moving {
+  to {
+    background-position: 100vmin 20vmin, -100vmin -25vmin;
+  }
+}
