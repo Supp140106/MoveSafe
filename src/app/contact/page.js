@@ -52,10 +52,7 @@ export default function ContactPage() {
             />
             <main className="min-h-screen bg-white">
                 <Header />
-                <div className="pt-28 pb-2 bg-secondary-50 text-center">
-                    <h1 className="text-4xl font-bold text-black">Contact Us</h1>
-                    <p className="text-[#082f49] mt-2">Get a free quote for your move today</p>
-                </div>
+                
                 <Contact />
                 <Footer />
             </main>
