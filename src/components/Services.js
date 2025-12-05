@@ -113,18 +113,6 @@ export default function Services() {
                                         </div>
                                     </div>
 
-                                    {/* Features preview - only show when collapsed */}
-                                    {!isExpanded && (
-                                        <ul className="mb-5 space-y-1">
-                                            {service.features.slice(0, 2).map((feature, i) => (
-                                                <li key={i} className="text-xs text-gray-600 flex items-center">
-                                                    <span className="w-1.5 h-1.5 bg-primary-600 rounded-full mr-2"></span>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-
                                     <button
                                         onClick={() => toggleCard(index)}
                                         className="inline-flex items-center text-[#082f49] font-bold text-sm uppercase tracking-wide hover:text-primary-600 transition-colors mt-auto cursor-pointer"
