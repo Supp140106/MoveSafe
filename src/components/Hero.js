@@ -1,65 +1,69 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, ShieldCheck, Truck, Clock } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-secondary-50 overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-5">
-                <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0 100 C 20 0 50 0 100 100 Z" fill="currentColor" />
-                </svg>
+        <section className="relative min-h-[800px] lg:h-[700px] flex items-center justify-center overflow-hidden pt-32 pb-12 lg:py-0">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
+                {/* Indian Logistics Context Image - Container Truck on Highway */}
+                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"></div>
             </div>
 
-            <div className="container-custom relative z-10">
-                <div className="max-w-4xl mx-auto text-center">
-                    <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary-50 text-primary-700 font-medium text-sm mb-8 animate-fade-in">
-                        <span className="w-2 h-2 bg-primary-600 rounded-full mr-2"></span>
-                        New Standard in Relocation Services
+            <div className="container-custom relative z-20 w-full">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+
+                    {/* Left Content - Bold & Direct */}
+                    <div className="text-white max-w-2xl animate-slide-up text-center lg:text-left">
+                        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight drop-shadow-xl">
+                            <span className="text-white">WE MOVE</span> <br />
+                            <span className="text-red-600 drop-shadow-sm">YOUR WORLD</span>
+                        </h1>
+                        <p className="text-xl md:text-2xl text-gray-100 mb-8 font-medium drop-shadow-md">
+                            India's most trusted logistics and relocation partner. Fast, Safe, and Reliable.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <Link href="/services" className="bg-primary-600 text-white hover:bg-primary-700 text-lg font-bold px-10 py-4 rounded-sm shadow-lg hover:shadow-xl transition-all uppercase tracking-wider border border-primary-600">
+                                Explore Services
+                            </Link>
+                        </div>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-bold text-primary-900 mb-6 leading-tight animate-slide-up">
-                        Moving Made <span className="text-primary-600">Simple</span> & <span className="text-accent-orange">Safe</span>
-                    </h1>
+                    {/* Right Form - Floating Card (Delhivery Style) */}
+                    <div className="bg-white p-8 rounded-sm shadow-2xl w-full max-w-md animate-fade-in">
+                        <h2 className="text-2xl font-bold text-black mb-6 flex items-center">
+                            <span className="w-1 h-8 bg-primary-600 mr-3 rounded-full"></span>
+                            Get a Free Quote
+                        </h2>
 
-                    <p className="text-xl text-secondary-600 mb-10 max-w-2xl mx-auto leading-relaxed animate-slide-up">
-                        Experience the fresh approach to packing and moving. We combine modern technology with dedicated service to ensure your belongings reach safely.
-                    </p>
+                        <form className="space-y-5">
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Pickup City</label>
+                                    <input type="text" placeholder="Enter City" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:border-primary-600 focus:ring-0 outline-none transition-all font-medium text-gray-900 placeholder-gray-400" />
+                                </div>
+                                <div>
+                                    <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Drop City</label>
+                                    <input type="text" placeholder="Enter City" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:border-primary-600 focus:ring-0 outline-none transition-all font-medium text-gray-900 placeholder-gray-400" />
+                                </div>
+                            </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-slide-up">
-                        <Link href="/contact" className="btn-primary text-lg px-8 py-4 w-full sm:w-auto">
-                            Get Free Quote <ArrowRight className="ml-2 w-5 h-5" />
-                        </Link>
-                        <Link href="/services" className="btn-outline text-lg px-8 py-4 w-full sm:w-auto">
-                            Explore Services
-                        </Link>
-                    </div>
+                            <div>
+                                <label className="block text-[10px] font-bold text-gray-500 mb-1 uppercase tracking-wider">Mobile Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:border-primary-600 focus:ring-0 outline-none transition-all font-medium text-gray-900 placeholder-gray-400" />
+                            </div>
 
-                    {/* Features Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left animate-slide-up">
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-100">
-                            <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                                <Truck className="w-6 h-6 text-primary-600" />
-                            </div>
-                            <h3 className="text-lg font-bold text-primary-900 mb-2">Modern Fleet</h3>
-                            <p className="text-secondary-600 text-sm">GPS-enabled vehicles for real-time tracking of your goods.</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-100">
-                            <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                                <ShieldCheck className="w-6 h-6 text-primary-600" />
-                            </div>
-                            <h3 className="text-lg font-bold text-primary-900 mb-2">Secure Packing</h3>
-                            <p className="text-secondary-600 text-sm">Premium packing materials to ensure zero damage.</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-100">
-                            <div className="w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center mb-4">
-                                <Clock className="w-6 h-6 text-primary-600" />
-                            </div>
-                            <h3 className="text-lg font-bold text-primary-900 mb-2">On-Time Delivery</h3>
-                            <p className="text-secondary-600 text-sm">Punctual service respecting your valuable time.</p>
-                        </div>
+                            <button type="submit" className="w-full btn-primary py-4 text-lg shadow-lg">
+                                Get Estimate <ArrowRight className="ml-2 w-5 h-5" />
+                            </button>
+
+                            <p className="text-[10px] text-center text-gray-400 mt-4">
+                                By continuing, you agree to our Terms of Service & Privacy Policy.
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
