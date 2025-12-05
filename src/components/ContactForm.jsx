@@ -116,7 +116,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg font-semibold rounded-lg text-white bg-blue-950 hover:bg-blue-900 transition duration-300 shadow-md hover:shadow-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
+        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg font-semibold rounded-lg text-white bg-gray-900 hover:bg-gray-800 transition duration-300 shadow-md hover:shadow-lg cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed"
         disabled={isSubmitting}
       >
         {isSubmitting ? (

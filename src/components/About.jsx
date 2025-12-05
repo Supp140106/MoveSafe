@@ -1,67 +1,96 @@
 'use client';
 
 import Link from 'next/link';
-import { CheckCircle, Users, Package, Clock } from 'lucide-react';
+import { CheckCircle, Users, Package, Clock, BadgeCheck, MapPin, ShieldCheck } from 'lucide-react';
 
 export default function About() {
     return (
-        
-        <section className="py-1 md:py-24 bg-secondary-50"> 
+
+        <section className="pt-16 pb-16 bg-white">
             <div className="container-custom">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Content */}
+                {/* Main Intro Section */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-20">
                     <div className="animate-slide-up">
-                        <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-6 pb-1">
-                            About <span className="text-primary-600">MoveSafePackers</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
+                            Redefining Relocation <br />
+                            <span className="text-primary-600">Across India</span>
                         </h2>
-                        <p className="text-secondary-600 text-lg mb-6 leading-relaxed">
-                            MoveSafePackers represents a new era in the relocation industry. Born from a desire to modernize the moving experience, we combine energetic professionalism with cutting-edge logistics technology.
+                        <p className="text-[#082f49] text-lg mb-6 leading-relaxed font-medium">
+                            Headquartered in Gurugram, MoveSafePackers has evolved from a local transport provider to one of India's most trusted logistics partners. With over a decade of experience, we bridge the gap between complex logistics and personalized care.
                         </p>
-                        <p className="text-secondary-600 text-lg mb-8 leading-relaxed">
-                            We aren't just moving boxes; we are moving lives. Our fresh fleet of vehicles and rigorously trained team ensures that your transition is as smooth and stress-free as possible. We bring a level of transparency and care that sets a new standard.
+                        <p className="text-gray-600 text-base leading-relaxed mb-8">
+                            We understand that every move is unique. Whether it's shifting a corporate office in Bangalore or moving a family home to Mumbai, our ISO 9001:2015 certified processes ensure zero-damage delivery and on-time execution. We don't just move goods; we move memories.
                         </p>
 
-                        {/* Key Points */}
-                        <div className="space-y-4 mb-8">
-                            <div className="flex items-start space-x-3">
-                                <CheckCircle className="w-6 h-6 text-accent-orange shrink-0 mt-1" />
-                                <p className="text-secondary-700">Young, energetic, and professionally trained team</p>
+                        <div className="flex flex-wrap gap-4">
+                            <div className="bg-gray-50 px-6 py-3 rounded-lg border border-gray-100">
+                                <span className="block text-2xl font-bold text-black">15+</span>
+                                <span className="text-xs text-gray-500 uppercase tracking-wide">Years Exp.</span>
                             </div>
-                            <div className="flex items-start space-x-3">
-                                <CheckCircle className="w-6 h-6 text-accent-orange shrink-0 mt-1" />
-                                <p className="text-secondary-700">Brand new fleet of GPS-enabled vehicles</p>
+                            <div className="bg-gray-50 px-6 py-3 rounded-lg border border-gray-100">
+                                <span className="block text-2xl font-bold text-black">20k+</span>
+                                <span className="text-xs text-gray-500 uppercase tracking-wide">Happy Moves</span>
                             </div>
-                            <div className="flex items-start space-x-3">
-                                <CheckCircle className="w-6 h-6 text-accent-orange shrink-0 mt-1" />
-                                <p className="text-secondary-700">Transparent pricing with no hidden costs</p>
-                            </div>
-                            <div className="flex items-start space-x-3">
-                                <CheckCircle className="w-6 h-6 text-accent-orange shrink-0 mt-1" />
-                                <p className="text-secondary-700">Digital inventory tracking for total peace of mind</p>
+                            <div className="bg-gray-50 px-6 py-3 rounded-lg border border-gray-100">
+                                <span className="block text-2xl font-bold text-black">19k+</span>
+                                <span className="text-xs text-gray-500 uppercase tracking-wide">Pin Codes</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Right Stats */}
-                    <div className="grid grid-cols-2 gap-6 animate-slide-up">
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-200 text-center">
-                            <Users className="w-10 h-10 text-primary-600 mx-auto mb-3" />
-                            <div className="text-3xl font-bold text-primary-900 mb-1">100%</div>
-                            <div className="text-secondary-500 text-sm">Dedicated Team</div>
+                    {/* Right Side - Mission/Vision Cards */}
+                    <div className="grid grid-cols-1 gap-6 animate-slide-up delay-100">
+                        <div className="bg-secondary-50 p-8 rounded-2xl border-l-4 border-primary-600 shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-bold text-black mb-3 flex items-center">
+                                <Users className="w-6 h-6 text-primary-600 mr-3" />
+                                Our Mission
+                            </h3>
+                            <p className="text-[#082f49] leading-relaxed">
+                                To provide seamless, technology-driven relocation solutions that eliminate stress and ensure the safety of every item entrusted to us, setting a benchmark for reliability in the Indian logistics sector.
+                            </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-200 text-center">
-                            <Package className="w-10 h-10 text-primary-600 mx-auto mb-3" />
-                            <div className="text-3xl font-bold text-primary-900 mb-1">Zero</div>
-                            <div className="text-secondary-500 text-sm">Damage Record</div>
+                        <div className="bg-secondary-50 p-8 rounded-2xl border-l-4 border-black shadow-sm hover:shadow-md transition-shadow">
+                            <h3 className="text-xl font-bold text-black mb-3 flex items-center">
+                                <CheckCircle className="w-6 h-6 text-black mr-3" />
+                                Our Vision
+                            </h3>
+                            <p className="text-[#082f49] leading-relaxed">
+                                To be India's preferred relocation partner, known for transparency, operational excellence, and a customer-first approach that turns every move into a success story.
+                            </p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-200 text-center">
-                            <Clock className="w-10 h-10 text-primary-600 mx-auto mb-3" />
-                            <div className="text-3xl font-bold text-primary-900 mb-1">24/7</div>
-                            <div className="text-secondary-500 text-sm">Support Available</div>
+                    </div>
+                </div>
+
+                {/* Industry Standards Strip */}
+                <div className="border-t border-b border-gray-100 py-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 bg-green-50 rounded-full flex items-center justify-center mb-3">
+                                <CheckCircle className="w-6 h-6 text-green-600" />
+                            </div>
+                            <h4 className="text-black font-bold mb-1">ISO 9001:2015</h4>
+                            <p className="text-xs text-gray-500">Certified Quality</p>
                         </div>
-                        <div className="bg-white p-6 rounded-lg shadow-sm border border-secondary-200 text-center">
-                            <div className="text-3xl font-bold text-primary-900 mb-1">Top</div>
-                            <div className="text-secondary-500 text-sm">Rated Service</div>
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mb-3">
+                                <Package className="w-6 h-6 text-blue-600" />
+                            </div>
+                            <h4 className="text-black font-bold mb-1">IBA Approved</h4>
+                            <p className="text-xs text-gray-500">Bank Verified Bills</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center mb-3">
+                                <Clock className="w-6 h-6 text-orange-600" />
+                            </div>
+                            <h4 className="text-black font-bold mb-1">On-Time Delivery</h4>
+                            <p className="text-xs text-gray-500">GPS Tracked Fleet</p>
+                        </div>
+                        <div className="flex flex-col items-center justify-center">
+                            <div className="w-12 h-12 bg-purple-50 rounded-full flex items-center justify-center mb-3">
+                                <Users className="w-6 h-6 text-purple-600" />
+                            </div>
+                            <h4 className="text-black font-bold mb-1">Verified Staff</h4>
+                            <p className="text-xs text-gray-500">Background Checked</p>
                         </div>
                     </div>
                 </div>

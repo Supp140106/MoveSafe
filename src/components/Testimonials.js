@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { Star, StarHalf, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 export default function Testimonials() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,20 +17,20 @@ export default function Testimonials() {
         {
             name: 'Priya Sharma',
             location: 'Delhi',
-            rating: 5,
+            rating: 4,
             text: 'Finally a moving company that uses modern technology! Loved the real-time tracking and the digital inventory list.',
         },
         {
-            name: 'Amit Patel',
-            location: 'Bangalore',
+            name: 'Anjali Mehta',
+            location: 'Hyderabad',
             rating: 5,
-            text: 'Very professional and transparent. The quote they gave was exactly what I paid. No hidden fees at all. Highly recommended!',
+            text: 'Moving from Bangalore to Hyderabad was seamless. The team handled my fragile items with extra care. Highly recommended!',
         },
         {
-            name: 'Long Word Tester',
-            location: 'Test City',
-            rating: 4,
-            text: 'This is a test testimonial that contains a very.',
+            name: 'Vikram Singh',
+            location: 'Pune',
+            rating: 4.5,
+            text: 'Excellent service! The packing was top-notch, and the delivery was right on time. Will definitely use MoveSafe again.',
         },
     ];
 
@@ -64,8 +64,8 @@ export default function Testimonials() {
         <section className="bg-gray-900 text-white py-20 overflow-hidden">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold">Client Stories</h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold text-blue-300">Client Stories</h2>
+                    <p className="text-blue-100 text-lg max-w-2xl mx-auto">
                         See what our early adopters are saying about the new standard in moving.
                     </p>
                 </div>
@@ -73,7 +73,7 @@ export default function Testimonials() {
                 <div className="relative max-w-4xl mx-auto">
                     {/* FIX 1: Removed 'p-8 md:p-12' from this parent container */}
                     <div className="relative bg-gray-800 rounded-2xl border border-gray-700 shadow-lg overflow-hidden">
-                        
+
                         <div
                             className="transition-all duration-700 ease-in-out"
                             style={{
@@ -83,27 +83,30 @@ export default function Testimonials() {
                             }}
                         >
                             {testimonials.map((t, index) => (
-                                <div 
-                                    key={index} 
+                                <div
+                                    key={index}
                                     // FIX 2: Added 'p-8 md:p-12' here. Padding now belongs to the slide.
-                                    className="shrink-0 p-8 md:p-12" 
+                                    className="shrink-0 p-8 md:p-12"
                                     style={{ width: `${100 / testimonials.length}%` }}
                                 >
-                                    <Quote className="w-12 h-12 text-gray-600 mb-6 opacity-70" />
+                                    <Quote className="w-12 h-12 text-blue-300 mb-6 opacity-70" />
 
                                     <div className="flex gap-1 mb-6">
-                                        {[...Array(t.rating)].map((_, i) => (
-                                            <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                                        {[...Array(Math.floor(t.rating))].map((_, i) => (
+                                            <Star key={`full-${i}`} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
                                         ))}
+                                        {t.rating % 1 !== 0 && (
+                                            <StarHalf className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                                        )}
                                     </div>
 
-                                    <p className="text-xl md:text-2xl mb-8 leading-relaxed font-light text-gray-200 wrap-break-words whitespace-normal">
+                                    <p className="text-xl md:text-2xl mb-8 leading-relaxed font-light text-white wrap-break-words whitespace-normal">
                                         "{t.text}"
                                     </p>
 
                                     <div>
                                         <div className="font-bold text-lg">{t.name}</div>
-                                        <div className="text-gray-400 text-sm">{t.location}</div>
+                                        <div className="text-blue-200 text-sm">{t.location}</div>
                                     </div>
                                 </div>
                             ))}
@@ -111,10 +114,10 @@ export default function Testimonials() {
 
                         {/* Controls */}
                         <div className="absolute bottom-8 right-8 flex gap-2 z-10">
-                            <button onClick={prev} className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition">
+                            <button onClick={prev} className="p-2 rounded-full bg-[#075985] hover:bg-[#0369a1] transition">
                                 <ChevronLeft className="w-5 h-5" />
                             </button>
-                            <button onClick={next} className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition">
+                            <button onClick={next} className="p-2 rounded-full bg-[#075985] hover:bg-[#0369a1] transition">
                                 <ChevronRight className="w-5 h-5" />
                             </button>
                         </div>
@@ -129,7 +132,7 @@ export default function Testimonials() {
                                     setCurrentIndex(i);
                                     resetInterval();
                                 }}
-                                className={`w-3 h-3 rounded-full cursor-pointer transition ${i === currentIndex ? 'bg-yellow-400' : 'bg-gray-600'}`}
+                                className={`w-3 h-3 rounded-full cursor-pointer transition ${i === currentIndex ? 'bg-yellow-400' : 'bg-blue-800'}`}
                             />
                         ))}
                     </div>

@@ -37,18 +37,18 @@ export default function WhyChooseUs() {
     ];
 
     return (
-        <section className="section-padding bg-white">
+        <section className="pt-[55px] pb-16 bg-white">
             <div className="container-custom">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">
-                        Why Choose <span className="text-primary-600">MoveSafe</span>?
+                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+                        Why Choose <span className="text-primary-600">MoveSafePackers</span>?
                     </h2>
-                    <p className="text-secondary-600 text-lg max-w-2xl mx-auto">
+                    <p className="text-[#082f49] text-lg max-w-2xl mx-auto font-medium">
                         We bring a fresh perspective to relocation, prioritizing safety and speed.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {features.map((feature, index) => (
                         <div
                             key={index}
@@ -60,10 +60,10 @@ export default function WhyChooseUs() {
                                 </div>
                             </div>
                             <div className="ml-4">
-                                <h3 className="text-lg font-bold text-primary-900 mb-2">
+                                <h3 className="text-lg font-bold text-[#082f49] mb-2">
                                     {feature.title}
                                 </h3>
-                                <p className="text-secondary-600 text-sm leading-relaxed">
+                                <p className="text-[#082f49] text-sm leading-relaxed font-medium">
                                     {feature.description}
                                 </p>
                             </div>

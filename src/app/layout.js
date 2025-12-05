@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "MoveSafePackers - Professional Packers and Movers Services in India",
+  title: "MoveSafePackers",
   description: "Trusted packers and movers offering house shifting, office relocation, car & bike transportation across India. Safe, reliable, and affordable moving solutions with insurance coverage.",
   keywords: "packers and movers, house shifting, office relocation, car transportation, bike transportation, domestic relocation, moving services, movers in India",
   authors: [{ name: "MoveSafePackers" }],

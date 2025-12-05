@@ -26,28 +26,19 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
-        isScrolled ? "shadow-md py-2" : "py-4 border-b border-secondary-100"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black ${isScrolled ? "shadow-md py-2" : "py-4 border-b border-gray-800"
+        }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between py-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary-700 rounded flex items-center justify-center">
-              <img
-                src="/favicon.ico"
-                alt="Logo"
-                className="w-6 h-6 object-contain"
-              />
-            </div>
-
-            <div>
-              <h1 className="text-xl font-bold text-primary-900 leading-tight">
-                MoveSafe<span className="text-accent-orange">Packers</span>
+          <Link href="/" className="flex items-center space-x-2 group">
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-bold text-white leading-none tracking-tight">
+                MoveSafe<span className="text-primary-600">Packers</span>
               </h1>
-              <p className="text-xs text-secondary-500 font-medium tracking-wide">
-                MODERN RELOCATION
+              <p className="text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mt-0.5">
+                Logistics
               </p>
             </div>
           </Link>
@@ -58,7 +49,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-secondary-700 hover:text-primary-700 font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-primary-600 font-bold text-sm uppercase tracking-wide transition-colors duration-200"
               >
                 {link.name}
               </Link>
@@ -67,21 +58,16 @@ export default function Header() {
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex flex-col items-end">
+            <div className="flex flex-col items-end mr-2">
+              <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Support</span>
               <a
-                href="tel:+919876543210"
-                className="flex items-center text-primary-900 font-semibold hover:text-primary-700 transition-colors"
+                href="tel:+911244718888"
+                className="text-sm font-bold text-white hover:text-primary-600 transition-colors"
               >
-                <Phone className="w-4 h-4 mr-2" /> +91 98765 43210
-              </a>
-              <a
-                href="mailto:info@movesafepackers.com"
-                className="flex items-center text-sm text-secondary-500 hover:text-primary-700 transition-colors"
-              >
-                <Mail className="w-3 h-3 mr-2" /> info@movesafepackers.com
+                +91 124 471 8888
               </a>
             </div>
-            <Link href="/contact" className="btn-secondary">
+            <Link href="#quote" className="btn-primary text-sm px-6 py-2.5">
               Get Quote
             </Link>
           </div>
@@ -89,7 +75,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-secondary-900 p-2"
+            className="lg:hidden text-white p-2 hover:bg-secondary-50 rounded-md transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -102,34 +88,24 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden mt-4 bg-white border-t border-secondary-100 py-4 animate-fade-in">
+          <div className="lg:hidden bg-white border-t border-secondary-100 py-4 animate-fade-in">
             <nav className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-secondary-800 hover:bg-secondary-50 hover:text-primary-700 font-medium px-4 py-3 rounded-md transition-colors"
+                  className="text-secondary-800 hover:bg-primary-50 hover:text-primary-700 font-medium px-4 py-3 rounded-md transition-colors flex items-center justify-between group"
                 >
                   {link.name}
+                  <span className="text-secondary-300 group-hover:text-primary-400">→</span>
                 </Link>
               ))}
               <div className="pt-4 mt-2 border-t border-secondary-100 px-4">
-                <a
-                  href="tel:+919876543210"
-                  className="flex items-center text-primary-900 font-semibold py-2"
-                >
-                  <Phone className="w-4 h-4 mr-3" /> +91 98765 43210
-                </a>
-                <a
-                  href="mailto:info@movesafepackers.com"
-                  className="flex items-center text-secondary-600 py-2"
-                >
-                  <Mail className="w-4 h-4 mr-3" /> info@movesafepackers.com
-                </a>
                 <Link
                   href="/contact"
-                  className="btn-secondary w-full text-center mt-4"
+                  className="btn-primary w-full text-center mt-4"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Quote
                 </Link>

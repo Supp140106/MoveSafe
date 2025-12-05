@@ -9,17 +9,17 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e', // Deep Royal Blue
-          950: '#082f49',
+          50: '#fff0f3',
+          100: '#ffe3e8',
+          200: '#ffc9d2',
+          300: '#ff9ba8',
+          400: '#ff6477',
+          500: '#ff2e46',
+          600: '#d90429', // Delhivery Red
+          700: '#b30020',
+          800: '#95001b',
+          900: '#7e0018',
+          950: '#450009',
         },
         secondary: {
           50: '#f8fafc',
@@ -30,13 +30,14 @@ module.exports = {
           500: '#64748b',
           600: '#475569',
           700: '#334155',
-          800: '#1e293b', // Slate Gray
-          900: '#0f172a',
-          950: '#020617',
+          800: '#1e293b',
+          900: '#111111', // Deep Black
+          950: '#000000',
         },
         accent: {
-          orange: '#ea580c', // Professional Burnt Orange
-          gold: '#ca8a04',   // Muted Gold
+          red: '#d90429',
+          dark: '#111111',
+          gray: '#f3f4f6',
         },
       },
       fontFamily: {

@@ -32,40 +32,36 @@
     @apply py-16 md:py-24;
   }
 
-  /* Professional Buttons */
+  /* Professional Buttons - Delhivery Style */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white transition-colors duration-200 shadow-sm;
-    background-color: #0369a1;
-    /* primary-700 */
+    @apply inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-sm text-white transition-all duration-300 shadow-sm uppercase tracking-wide;
+    background-color: #d90429;
   }
 
   .btn-primary:hover {
-    background-color: #075985;
-    /* primary-800 */
+    background-color: #b30020;
+    @apply shadow-md;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white transition-colors duration-200 shadow-sm;
-    background-color: #ea580c;
-    /* accent-orange */
+    @apply inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-sm text-white transition-all duration-300 shadow-sm uppercase tracking-wide;
+    background-color: #111111;
   }
 
   .btn-secondary:hover {
-    background-color: #c2410c;
-    /* orange-700 approx */
+    background-color: #000000;
+    @apply shadow-md;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center px-6 py-3 border-2 text-base font-medium rounded-md bg-transparent transition-colors duration-200;
-    border-color: #0369a1;
-    /* primary-700 */
-    color: #0369a1;
-    /* primary-700 */
+    @apply inline-flex items-center justify-center px-8 py-3 border-2 text-base font-bold rounded-sm bg-transparent transition-colors duration-200 uppercase tracking-wide;
+    border-color: #d90429;
+    color: #d90429;
   }
 
   .btn-outline:hover {
-    background-color: #f0f9ff;
-    /* primary-50 */
+    background-color: #d90429;
+    color: white;
   }
 
   /* Cards */
