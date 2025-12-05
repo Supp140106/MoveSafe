@@ -113,7 +113,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center">
                                 <Phone className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />
-                                <span>+91 124 471 8888</span>
+                                <span>+91 98127 18379</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />
@@ -125,7 +125,7 @@ export default function Footer() {
 
                 <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
-                        &copy; {new Date().getFullYear()} MoveSafe Packers Ltd. All rights reserved. ISO 9001: 2015 Certified.
+                        &copy; {new Date().getFullYear()} MoveSafe Packers Ltd. All rights reserved.
                     </p>
                 </div>
             </div>
