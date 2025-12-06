@@ -67,7 +67,7 @@ export default function Header() {
                 +91 98127 18379
               </a>
             </div>
-            <Link href="#quote" className="btn-primary text-sm px-6 py-2.5">
+            <Link href="/contact" className="btn-primary text-sm px-6 py-2.5">
               Get Quote
             </Link>
           </div>
