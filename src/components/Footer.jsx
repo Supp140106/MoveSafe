@@ -51,12 +51,7 @@ export default function Footer() {
                                     Vehicle Transport
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/services" className="flex items-center hover:text-primary-600 transition-all duration-300 hover:translate-x-2">
-                                    <ChevronRight className="w-4 h-4 text-primary-600 mr-2" />
-                                    Warehousing Solutions
-                                </Link>
-                            </li>
+
                             <li>
                                 <Link href="/services" className="flex items-center hover:text-primary-600 transition-all duration-300 hover:translate-x-2">
                                     <ChevronRight className="w-4 h-4 text-primary-600 mr-2" />

@@ -1,6 +1,11 @@
 'use client';
 
+<<<<<<< Updated upstream
 import { ArrowRight } from 'lucide-react';
+=======
+import { useState } from 'react';
+import { ArrowRight, ChevronDown, ChevronUp, Check, ShieldCheck, Package, MapPin } from 'lucide-react';
+>>>>>>> Stashed changes
 
 const services = [
     {
@@ -78,6 +83,48 @@ export default function Services() {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Additional Services Info - Industry Standard Design */}
+                <div className="mt-20 pt-12 border-t border-gray-200">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                        {/* Left Column: Description */}
+                        <div className="lg:col-span-5">
+                            <h3 className="text-2xl font-bold text-black mb-6">Comprehensive Solutions</h3>
+                            <p className="text-[#082f49] text-lg leading-relaxed font-medium">
+                                Movesafe Packers & Movers offers comprehensive relocation solutions tailored for local and regional needs, drawing from standard industry practices in the area.
+                            </p>
+                        </div>
+
+                        {/* Right Column: Features List */}
+                        <div className="lg:col-span-7">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div className="flex flex-col items-start">
+                                    <ShieldCheck className="w-8 h-8 text-primary-600 mb-4" />
+                                    <h4 className="text-black font-bold text-base mb-2">Insurance Coverage</h4>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Protection against damage or loss during transit.
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col items-start">
+                                    <Package className="w-8 h-8 text-primary-600 mb-4" />
+                                    <h4 className="text-black font-bold text-base mb-2">Expert Packing</h4>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Use of quality materials for fragile and bulky items.
+                                    </p>
+                                </div>
+
+                                <div className="flex flex-col items-start">
+                                    <MapPin className="w-8 h-8 text-primary-600 mb-4" />
+                                    <h4 className="text-black font-bold text-base mb-2">Pan-India Service</h4>
+                                    <p className="text-gray-600 text-sm leading-relaxed">
+                                        Door-to-door service within Mumbai and across India.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

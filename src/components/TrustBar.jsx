@@ -16,8 +16,10 @@ export default function TrustBar() {
 
                     {/* Stat 2 */}
                     <div className="flex-1 py-8 md:py-12 px-4 flex flex-col items-center justify-center text-center group hover:bg-gray-50 transition-colors duration-300">
-                        <Award className="w-8 h-8 text-primary-600 mb-3 opacity-80 group-hover:scale-110 transition-transform duration-300" />
-                        <h3 className="text-3xl font-bold text-black mb-1">15+</h3>
+                        <div className="flex items-center space-x-2">
+                            <CheckCircle className="w-5 h-5 text-green-600" />
+                            <span className="font-bold text-gray-700 text-sm">Quality Assured</span>
+                        </div>
                         <p className="text-gray-500 text-xs font-bold uppercase tracking-widest">Years Experience</p>
                     </div>
 
