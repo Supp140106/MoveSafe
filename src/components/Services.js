@@ -10,7 +10,7 @@ const services = [
         description: 'Expert household shifting services ensuring your belongings reach safely. From packing delicate items to furniture disassembly, we handle everything with care.',
         longDescription: 'Our residential moving service covers complete household relocation including packing, loading, transportation, unloading, and unpacking. We use premium quality packing materials to ensure your valuables are protected during transit.',
         features: ['Complete packing & unpacking', 'Furniture disassembly & reassembly', 'Fragile item handling', 'Transit insurance'],
-        image: '/images/residential.png',
+        image: '/images/residential.webp',
     },
     {
         id: 'corporate-relocation',
@@ -18,7 +18,7 @@ const services = [
         description: 'Seamless office moving solutions to minimize business downtime. We plan and execute corporate moves with precision and efficiency.',
         longDescription: 'Professional office relocation services designed to minimize disruption to your business. We handle IT equipment, office furniture, documents, and all assets with specialized care.',
         features: ['Weekend/off-hours moving', 'IT equipment handling', 'Document management', 'Furniture installation'],
-        image: '/images/corporate.png',
+        image: '/images/corporate.webp',
     },
     {
         id: 'vehicle-transportation',
@@ -26,7 +26,7 @@ const services = [
         description: 'Safe and secure car and bike carrier services across India. GPS-tracked transport with full insurance coverage for your peace of mind.',
         longDescription: 'Specialized vehicle transportation using enclosed carriers and open trailers. Every vehicle is secured with proper strapping and transported by experienced drivers.',
         features: ['Enclosed & open carriers', 'Door-to-door delivery', 'GPS tracking', 'Full insurance cover'],
-        image: '/images/vehicle.png',
+        image: '/images/vehicle.webp',
     },
     {
         id: 'packing-services',
@@ -34,7 +34,7 @@ const services = [
         description: 'Premium packing using high-quality materials for extra protection. We pack everything from fragile glassware to heavy furniture.',
         longDescription: 'Expert packing services using multi-layered protection, custom crates for fragile items, and industry-standard packing materials to ensure zero damage during transit.',
         features: ['Multi-layer protection', 'Custom wooden crates', 'Bubble wrap & thermocol', 'Labeling & inventory'],
-        image: '/images/packing.png',
+        image: '/images/packing.webp',
     },
 
 ];

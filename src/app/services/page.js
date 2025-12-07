@@ -20,7 +20,7 @@ export const metadata = {
     openGraph: {
         title: "MoveSafe Services - Complete Moving Solutions",
         description: "House shifting, office relocation, vehicle transportation & storage services. Get free quotes for your move!",
-        url: "https://movesafepackers.com/services",
+        url: "https://movesafepacker.com/services",
     },
     alternates: {
         canonical: "/services",

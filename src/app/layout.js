@@ -57,7 +57,7 @@ export const metadata = {
       "India's most trusted packers and movers. Safe, reliable & affordable house shifting, office relocation, and vehicle transportation with insurance coverage.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/packing.webp",
         width: 1200,
         height: 630,
         alt: "MoveSafe Packers & Movers - Professional Relocation Services",
