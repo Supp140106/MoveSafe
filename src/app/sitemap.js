@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://movesafepacker.com';
+    const baseUrl = 'https://Movesafepacker.com';
     const currentDate = new Date().toISOString();
 
     return [

@@ -5,7 +5,85 @@ import Link from 'next/link';
 import { ArrowRight, Loader2 } from 'lucide-react';
 import Swal from 'sweetalert2';
 
-// Major Indian cities for dropdown
+// Mumbai Metropolitan Region (MMR) Locations
+const MMR_LOCATIONS = [
+    {
+        label: "MUMBAI CITY (South Mumbai)",
+        options: [
+            "Colaba", "Cuffe Parade", "Churchgate", "Nariman Point", "Fort",
+            "Ballard Estate", "Marine Drive", "Malabar Hill", "Walkeshwar",
+            "Grant Road", "Girgaon", "Chowpatty", "Tardeo", "Breach Candy",
+            "Mahalaxmi", "Byculla", "Mumbai Central", "Agripada", "Nagpada"
+        ]
+    },
+    {
+        label: "MUMBAI SUBURBAN - Western",
+        options: [
+            "Bandra (East)", "Bandra (West)", "Khar", "Santacruz", "Vile Parle",
+            "Andheri", "Jogeshwari", "Goregaon", "Malad", "Kandivali",
+            "Borivali", "Dahisar", "Oshiwara", "Versova", "Lokhandwala",
+            "Goregaon Filmcity", "Juhu", "Marol", "Saki Naka", "MIDC",
+            "Charkop", "Gorai", "Manori", "Aksa Beach", "Madh Island"
+        ]
+    },
+    {
+        label: "MUMBAI SUBURBAN - Eastern",
+        options: [
+            "Kurla (East)", "Kurla (West)", "Ghatkopar", "Vidyavihar",
+            "Vikhroli", "Kanjurmarg", "Bhandup", "Mulund", "Powai",
+            "Chandivali", "Govandi", "Chembur", "Deonar", "Mankhurd"
+        ]
+    },
+    {
+        label: "NAVI MUMBAI",
+        options: [
+            "Airoli", "Ghansoli", "Koparkhairne", "Vashi", "Turbhe",
+            "Sanpada", "Juinagar", "Nerul", "Seawoods", "Darave",
+            "Belapur (CBD)", "Kharghar", "Taloja", "Kalamboli",
+            "Kamothe", "Panvel", "Ulwe", "Dronagiri"
+        ]
+    },
+    {
+        label: "THANE CITY",
+        options: [
+            "Thane West", "Thane East", "Manpada", "Majiwada", "Vasant Vihar",
+            "Patlipada", "Ghodbunder Road", "Naupada", "Panchpakhadi",
+            "Kasarvadavali", "Wagle Estate", "Kapurbawdi"
+        ]
+    },
+    {
+        label: "KALYAN–DOMBIVLI REGION",
+        options: [
+            "Kalyan (East)", "Kalyan (West)", "Dombivli (East)", "Dombivli (West)",
+            "Titwala", "Ambivli", "Shahad", "Ulhasnagar 1", "Ulhasnagar 2",
+            "Ulhasnagar 3", "Ulhasnagar 4", "Ulhasnagar 5"
+        ]
+    },
+    {
+        label: "MIRA–BHAYANDAR",
+        options: [
+            "Mira Road (East)", "Mira Road (West)", "Bhayandar (East)",
+            "Bhayandar (West)", "Uttan", "Gorai", "Dongri"
+        ]
+    },
+    {
+        label: "VASAI–VIRAR",
+        options: [
+            "Vasai (East)", "Vasai (West)", "Nalasopara (East)", "Nalasopara (West)",
+            "Virar (East)", "Virar (West)", "Vasai Road", "Arnala", "Sopara", "Pelhar"
+        ]
+    },
+    {
+        label: "OTHER REGIONS IN MMR",
+        options: [
+            "Palghar - Vasai", "Palghar - Virar", "Palghar - Nalasopara",
+            "Kelwa", "Saphale", "Raigad - Panvel", "Khopoli", "Uran",
+            "Karjat", "Neral"
+        ]
+    }
+];
+
+// Major Indian cities for dropdown (excluding MMR duplicates if preferred, but keeping for completeness)
 const INDIAN_CITIES = [
     // Metros
     "Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata", "Hyderabad",
@@ -160,10 +238,19 @@ export default function Hero() {
                                         className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:border-primary-600 focus:ring-0 outline-none transition-all font-medium text-gray-900 appearance-none cursor-pointer"
                                         required
                                     >
-                                        <option value="">Select City</option>
-                                        {INDIAN_CITIES.map((city) => (
-                                            <option key={city} value={city}>{city}</option>
+                                        <option value="">Select City / Area</option>
+                                        {MMR_LOCATIONS.map((group) => (
+                                            <optgroup key={group.label} label={group.label}>
+                                                {group.options.map((option) => (
+                                                    <option key={option} value={option}>{option}</option>
+                                                ))}
+                                            </optgroup>
                                         ))}
+                                        <optgroup label="Other Major Cities">
+                                            {INDIAN_CITIES.map((city) => (
+                                                <option key={city} value={city}>{city}</option>
+                                            ))}
+                                        </optgroup>
                                     </select>
                                 </div>
                                 <div>
@@ -176,10 +263,19 @@ export default function Hero() {
                                         className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-sm focus:border-primary-600 focus:ring-0 outline-none transition-all font-medium text-gray-900 appearance-none cursor-pointer"
                                         required
                                     >
-                                        <option value="">Select City</option>
-                                        {INDIAN_CITIES.map((city) => (
-                                            <option key={city} value={city}>{city}</option>
+                                        <option value="">Select City / Area</option>
+                                        {MMR_LOCATIONS.map((group) => (
+                                            <optgroup key={group.label} label={group.label}>
+                                                {group.options.map((option) => (
+                                                    <option key={option} value={option}>{option}</option>
+                                                ))}
+                                            </optgroup>
                                         ))}
+                                        <optgroup label="Other Major Cities">
+                                            {INDIAN_CITIES.map((city) => (
+                                                <option key={city} value={city}>{city}</option>
+                                            ))}
+                                        </optgroup>
                                     </select>
                                 </div>
                             </div>

@@ -15,7 +15,7 @@ export default function TermsConditions() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">1. Agreement</h2>
                             <p className="leading-relaxed">
-                                By using the services of MoveSafePackers, you agree to these Terms and Conditions. If you do not agree, you must not use our services.
+                                By using the services of Movesafepacker, you agree to these Terms and Conditions. If you do not agree, you must not use our services.
                             </p>
                         </section>
 
@@ -43,7 +43,7 @@ export default function TermsConditions() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">5. Insurance</h2>
                             <p className="leading-relaxed">
-                                MoveSafePackers offers transit insurance. We recommend purchasing insurance for valuable or fragile items. Full details of coverage are provided in the insurance policy.
+                                Movesafepacker offers transit insurance. We recommend purchasing insurance for valuable or fragile items. Full details of coverage are provided in the insurance policy.
                             </p>
                         </section>
 
@@ -57,7 +57,7 @@ export default function TermsConditions() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">7. Customer Responsibilities</h2>
                             <p className="leading-relaxed">
-                                It is the customer's responsibility to ensure that all items are packed securely for the move. Any damage resulting from improper packing is not the responsibility of MoveSafePackers.
+                                It is the customer's responsibility to ensure that all items are packed securely for the move. Any damage resulting from improper packing is not the responsibility of Movesafepacker.
                             </p>
                         </section>
 
@@ -78,7 +78,7 @@ export default function TermsConditions() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">10. Modifications</h2>
                             <p className="leading-relaxed">
-                                MoveSafePackers reserves the right to modify these Terms and Conditions at any time. Any updates will be posted on our website and are effective immediately.
+                                Movesafepacker reserves the right to modify these Terms and Conditions at any time. Any updates will be posted on our website and are effective immediately.
                             </p>
                         </section>
                     </div>

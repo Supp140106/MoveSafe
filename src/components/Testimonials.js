@@ -12,7 +12,7 @@ export default function Testimonials() {
             name: 'Rajesh Kumar',
             location: 'Mumbai',
             rating: 5,
-            text: 'I was skeptical about trying a new company, but MoveSafePackers exceeded my expectations! The team was so energetic and careful.',
+            text: 'I was skeptical about trying a new company, but Movesafepacker exceeded my expectations! The team was so energetic and careful.',
         },
         {
             name: 'Priya Sharma',

@@ -35,7 +35,7 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold text-white leading-none tracking-tight">
-                MoveSafe<span className="text-primary-600">Packers</span>
+                MoveSafe<span className="text-primary-600">Packer</span>
               </h1>
               <p className="text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mt-0.5">
                 Logistics
@@ -61,10 +61,10 @@ export default function Header() {
             <div className="flex flex-col items-end mr-2">
               <span className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Support</span>
               <a
-                href="tel:+919812718379"
+                href="tel:+918059677080"
                 className="text-sm font-bold text-white hover:text-primary-600 transition-colors"
               >
-                +91 98127 18379
+                +91 80596 77080 / 72299 96947
               </a>
             </div>
             <Link href="/contact" className="btn-primary text-sm px-6 py-2.5">

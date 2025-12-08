@@ -15,7 +15,7 @@ export const metadata = {
     openGraph: {
         title: "Contact MoveSafe - Get Your Free Moving Quote",
         description: "Reach out for affordable and reliable moving services. Free quotes available 24/7!",
-        url: "https://movesafepackers.com/contact",
+        url: "https://Movesafepacker.com/contact",
     },
     alternates: {
         canonical: "/contact",
@@ -32,7 +32,7 @@ const contactJsonLd = {
         "@type": "Organization",
         name: "MoveSafe Packers & Movers",
         telephone: "+91-9876543210",
-        email: "info@movesafepackers.com",
+        email: "info@Movesafepacker.com",
         contactPoint: {
             "@type": "ContactPoint",
             telephone: "+91-9876543210",
@@ -52,7 +52,7 @@ export default function ContactPage() {
             />
             <main className="min-h-screen bg-white">
                 <Header />
-                
+
                 <Contact />
                 <Footer />
             </main>

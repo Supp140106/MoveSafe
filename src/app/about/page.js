@@ -10,7 +10,7 @@ export const metadata = {
     openGraph: {
         title: "About MoveSafe Packers & Movers - Our Story",
         description: "Discover why MoveSafe is India's most trusted moving company. 15+ years of experience, 500+ happy customers daily.",
-        url: "https://movesafepackers.com/about",
+        url: "https://Movesafepacker.com/about",
     },
     alternates: {
         canonical: "/about",

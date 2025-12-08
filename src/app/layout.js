@@ -3,29 +3,29 @@ import "./globals.css";
 export const metadata = {
   // Basic Meta Tags
   title: {
-    default: "MoveSafe Packers & Movers | Trusted Relocation Services in India",
-    template: "%s | MoveSafe Packers & Movers",
+    default: "MoveSafe Packers & Movers Mumbai | Send Packages & Parcels from Mumbai to India",
+    template: "%s | MoveSafe Packers & Movers Mumbai",
   },
   description:
-    "MoveSafe Packers & Movers - India's trusted packers and movers offering house shifting, office relocation, car & bike transportation services. Safe, reliable, and affordable moving solutions with full insurance coverage. Get free quotes now!",
+    "MoveSafe Packers & Movers Mumbai - The best courier and package delivery service in Mumbai. Send parcels, household goods, and vehicles from Mumbai to anywhere in India. Safe, fast, and affordable delivery.",
   keywords: [
-    "packers and movers",
-    "packers and movers near me",
-    "house shifting services",
-    "home relocation",
-    "office relocation services",
-    "car transportation",
-    "bike transportation",
-    "domestic relocation",
-    "moving services India",
-    "best packers and movers",
-    "affordable movers",
-    "safe packers",
-    "professional movers",
-    "interstate moving",
-    "local shifting",
-    "warehouse storage",
-    "packing services",
+    "package delivery Mumbai",
+    "send packages from Mumbai",
+    "parcel service Mumbai",
+    "courier service Mumbai",
+    "packers and movers Mumbai",
+    "movers and packers near me",
+    "Mumbai to India courier",
+    "house shifting services Mumbai",
+    "home relocation Mumbai",
+    "send household items from Mumbai",
+    "luggage delivery Mumbai",
+    "bike transport Mumbai",
+    "car transport Mumbai",
+    "best packers and movers Mumbai",
+    "cheap courier service Mumbai",
+    "reliable parcel delivery",
+    "fastest courier Mumbai",
   ],
   authors: [{ name: "MoveSafe Packers & Movers" }],
   creator: "MoveSafe Packers & Movers",
@@ -50,17 +50,17 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://movesafepackers.com/",
-    siteName: "MoveSafe Packers & Movers",
-    title: "MoveSafe Packers & Movers | Trusted Relocation Services in India",
+    url: "https://Movesafepacker.com/",
+    siteName: "MoveSafe Packers & Movers Mumbai",
+    title: "Best Package Delivery & Movers in Mumbai | MoveSafe",
     description:
-      "India's most trusted packers and movers. Safe, reliable & affordable house shifting, office relocation, and vehicle transportation with insurance coverage.",
+      "Looking to send packages or shift house from Mumbai? MoveSafe offers India's most trusted parcel delivery and relocation services. From Colaba to Borivali, we cover all of Mumbai.",
     images: [
       {
         url: "/images/packing.webp",
         width: 1200,
         height: 630,
-        alt: "MoveSafe Packers & Movers - Professional Relocation Services",
+        alt: "MoveSafe Mumbai - Package Delivery and Relocation Services",
       },
     ],
   },
@@ -68,11 +68,11 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "MoveSafe Packers & Movers | Trusted Relocation Services",
+    title: "Send Packages from Mumbai to Anywhere in India | MoveSafe",
     description:
-      "Professional packers and movers offering safe & affordable house shifting, office relocation, and vehicle transportation across India.",
+      "Reliable package delivery and packers & movers service in Mumbai. We pick up from your doorstep in Mumbai and deliver across India.",
     images: ["/og-image.png"],
-    creator: "@movesafepackers",
+    creator: "@Movesafepacker",
   },
 
   // Verification (add your IDs when available)
@@ -83,18 +83,20 @@ export const metadata = {
   },
 
   // Canonical & Alternates
-  metadataBase: new URL("https://movesafepackers.com"),
+  metadataBase: new URL("https://Movesafepacker.com"),
   alternates: {
     canonical: "/",
   },
 
   // Category
-  category: "Packers and Movers",
+  category: "Logistics and Courier Services",
 
   // Other SEO Tags
   other: {
-    "geo.region": "IN",
-    "geo.placename": "India",
+    "geo.region": "IN-MH",
+    "geo.placename": "Mumbai",
+    "geo.position": "19.0760;72.8777",
+    "ICBM": "19.0760, 72.8777",
     "format-detection": "telephone=yes",
   },
 };
@@ -103,56 +105,78 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MovingCompany",
-  name: "MoveSafe Packers & Movers",
+  name: "MoveSafe Packers & Movers Mumbai",
   description:
-    "Professional packers and movers offering house shifting, office relocation, car & bike transportation services across India with insurance coverage.",
-  url: "https://movesafepackers.com",
-  logo: "https://movesafepackers.com/logo.png",
-  image: "https://movesafepackers.com/og-image.png",
-  telephone: "+91-9876543210",
-  email: "info@movesafepackers.com",
+    "Leading packers and movers and package delivery service based in Mumbai. We specialize in sending parcels, household goods, and vehicles from Mumbai to all over India.",
+  url: "https://Movesafepacker.com",
+  logo: "https://Movesafepacker.com/logo.png",
+  image: "https://Movesafepacker.com/og-image.png",
+  telephone: "+91-8059677080",
+  email: "info@Movesafepacker.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Your Business Address",
-    addressLocality: "Your City",
-    addressRegion: "Your State",
-    postalCode: "000000",
+    streetAddress: "Andheri East",
+    addressLocality: "Mumbai",
+    addressRegion: "Maharashtra",
+    postalCode: "400069",
     addressCountry: "IN",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "20.5937",
-    longitude: "78.9629",
+    latitude: "19.0760",
+    longitude: "72.8777",
   },
-  areaServed: {
-    "@type": "Country",
-    name: "India",
-  },
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Mumbai",
+    },
+    {
+      "@type": "City",
+      name: "Navi Mumbai",
+    },
+    {
+      "@type": "City",
+      name: "Thane",
+    },
+    {
+      "@type": "Country",
+      name: "India",
+    },
+  ],
   priceRange: "₹₹",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "18:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
   sameAs: [
-    "https://www.facebook.com/movesafepackers",
-    "https://www.instagram.com/movesafepackers",
-    "https://twitter.com/movesafepackers",
+    "https://www.facebook.com/Movesafepacker",
+    "https://www.instagram.com/Movesafepacker",
+    "https://twitter.com/Movesafepacker",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
-    reviewCount: "500",
+    ratingValue: "4.9",
+    reviewCount: "1250",
     bestRating: "5",
     worstRating: "1",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Moving Services",
+    name: "Moving & Delivery Services",
     itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Package Delivery",
+          description: "Door-to-door parcel and package delivery from Mumbai to anywhere in India",
+        },
+      },
       {
         "@type": "Offer",
         itemOffered: {
@@ -173,16 +197,8 @@ const jsonLd = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Car Transportation",
-          description: "Safe and secure car transportation across India",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Bike Transportation",
-          description: "Two-wheeler transportation with full safety measures",
+          name: "Vehicle Transportation",
+          description: "Safe car and bike transportation services",
         },
       },
     ],

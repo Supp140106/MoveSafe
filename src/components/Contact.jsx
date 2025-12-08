@@ -32,7 +32,7 @@ export default function ProfessionalContact() {
 
           <div className="flex flex-col h-full gap-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="tel:+919876543211" className="block">
+              <a href="tel:+918059677080" className="block">
                 <div className="bg-gray-700 text-white p-4 rounded-xl shadow-lg transition-transform duration-300 hover:shadow-xl cursor-pointer h-full">
                   <div className="flex items-start space-x-3">
                     <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
@@ -43,7 +43,7 @@ export default function ProfessionalContact() {
                         Call Us
                       </h3>
                       <p className="block text-xs text-gray-100">
-                        +91 98127 18379
+                        +91 80596 77080 / 72299 96947
                       </p>
                     </div>
                   </div>
@@ -51,7 +51,7 @@ export default function ProfessionalContact() {
               </a>
 
               <a
-                href="https://api.whatsapp.com/send?phone=919812718379&text=Hello%2C%20I%20need%20help%20with%20a%20relocation%20query"
+                href="https://api.whatsapp.com/send?phone=917400405120&text=Hello%2C%20I%20need%20help%20with%20a%20relocation%20query"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -66,7 +66,7 @@ export default function ProfessionalContact() {
                         WhatsApp
                       </h3>
                       <p className="block text-xs text-gray-100">
-                        +91 98127 18379
+                        +91 74004 05120
                       </p>
                     </div>
                   </div>
@@ -83,16 +83,16 @@ export default function ProfessionalContact() {
                       Email Us
                     </h3>
                     <a
-                      href="mailto:info@movesafepackers.com"
+                      href="mailto:info@Movesafepacker.com"
                       className="block text-xs text-gray-600 hover:text-gray-700 transition"
                     >
-                      info@movesafepackers.com
+                      info@Movesafepacker.com
                     </a>
                     <a
-                      href="mailto:support@movesafepackers.com"
+                      href="mailto:support@Movesafepacker.com"
                       className="block text-xs text-gray-600 hover:text-gray-700 transition"
                     >
-                      support@movesafepackers.com
+                      support@Movesafepacker.com
                     </a>
                   </div>
                 </div>
@@ -108,8 +108,8 @@ export default function ProfessionalContact() {
                       Head Office
                     </h3>
                     <p className="text-gray-600 text-xs">
-                      123 Business Park, Sector 5<br />
-                      Mumbai, Maharashtra 400001
+                      Shop No. 12, Andheri-Kurla Road,<br />
+                      Sakinaka, Andheri East, Mumbai 400072
                     </p>
                   </div>
                 </div>

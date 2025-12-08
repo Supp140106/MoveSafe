@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">1. Introduction</h2>
                             <p className="leading-relaxed">
-                                MoveSafePackers is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.
+                                Movesafepacker is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.
                             </p>
                         </section>
 
@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
                         <section>
                             <h2 className="text-xl font-bold text-black mb-3">10. Contact Us</h2>
                             <p className="leading-relaxed">
-                                If you have any questions or concerns regarding this Privacy Policy or how your personal data is handled, please contact us at support@movesafepackers.com.
+                                If you have any questions or concerns regarding this Privacy Policy or how your personal data is handled, please contact us at support@Movesafepacker.com.
                             </p>
                         </section>
                     </div>

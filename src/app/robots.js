@@ -15,7 +15,7 @@ export default function robots() {
                 allow: '/',
             },
         ],
-        sitemap: 'https://movesafepackers.com/sitemap.xml',
-        host: 'https://movesafepackers.com',
+        sitemap: 'https://Movesafepacker.com/sitemap.xml',
+        host: 'https://Movesafepacker.com',
     };
 }

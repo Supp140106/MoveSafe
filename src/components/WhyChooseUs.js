@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
             <div className="container-custom">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-                        Why Choose <span className="text-primary-600">MoveSafePackers</span>?
+                        Why Choose <span className="text-primary-600">Movesafepacker</span>?
                     </h2>
                     <p className="text-[#082f49] text-lg max-w-2xl mx-auto font-medium">
                         We bring a fresh perspective to relocation, prioritizing safety and speed.

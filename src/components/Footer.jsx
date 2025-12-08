@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Column 1: Company */}
                     <div className="lg:col-span-1">
                         <div className="mb-6">
-                            <span className="text-2xl font-bold tracking-tight text-black">MoveSafePackers</span>
+                            <span className="text-2xl font-bold tracking-tight text-black">Movesafepacker</span>
                         </div>
                         <p className="text-[#082f49] text-sm leading-relaxed mb-6 font-medium">
                             India's premier logistics and supply chain partner. delivering excellence across 19000+ pin codes.
@@ -78,7 +78,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" className="flex items-center hover:text-primary-600 transition-all duration-300 hover:translate-x-2">
+                                <Link href="/contact" className="flex items-center hover:text-primary-600 transition-all duration-300 hover:translate-x-2">
                                     <ChevronRight className="w-4 h-4 text-primary-600 mr-2" />
                                     Get a Quote
                                 </Link>
@@ -104,16 +104,22 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-[#082f49] font-medium">
                             <li className="flex items-start">
                                 <MapPin className="w-5 h-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
-                                <span>Plot No 5, Sector 44, Gurugram, Haryana - 122002</span>
+                                <span>Shop No. 12, Andheri-Kurla Road, Sakinaka, Andheri East, Mumbai, Maharashtra 400072</span>
                             </li>
                             <li className="flex items-center">
                                 <Phone className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />
-                                <span>+91 98127 18379</span>
+                                <span>+91 80596 77080 / +91 72299 96947</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />
-                                <span>support@movesafepackers.com</span>
+                                <a
+                                    href="mailto:support@Movesafepacker.com"
+                                    className="text-primary-600 hover:underline"
+                                >
+                                    support@Movesafepacker.com
+                                </a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
