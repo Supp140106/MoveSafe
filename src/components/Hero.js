@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Loader2 } from 'lucide-react';
 import Swal from 'sweetalert2';
 
@@ -197,7 +198,14 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-black/40 z-10"></div>
                 {/* Indian Logistics Context Image - Container Truck on Highway */}
-                <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"></div>
+                {/* Indian Logistics Context Image - Container Truck on Highway */}
+                <Image
+                    src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+                    alt="Indian Logistics Container Truck"
+                    fill
+                    priority
+                    className="object-cover object-center"
+                />
             </div>
 
             <div className="container-custom relative z-20 w-full">

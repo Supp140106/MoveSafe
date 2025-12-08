@@ -3,11 +3,11 @@ import "./globals.css";
 export const metadata = {
   // Basic Meta Tags
   title: {
-    default: "MoveSafe Packers & Movers Mumbai | Send Packages & Parcels from Mumbai to India",
+    default: "MoveSafe Packers & Movers Mumbai | India Delivery",
     template: "%s | MoveSafe Packers & Movers Mumbai",
   },
   description:
-    "MoveSafe Packers & Movers Mumbai - The best courier and package delivery service in Mumbai. Send parcels, household goods, and vehicles from Mumbai to anywhere in India. Safe, fast, and affordable delivery.",
+    "MoveSafe provides top-rated packing, moving, and relocation services in Mumbai. We offer safe household shifting, vehicle transport, and courier delivery across India.",
   keywords: [
     "package delivery Mumbai",
     "send packages from Mumbai",

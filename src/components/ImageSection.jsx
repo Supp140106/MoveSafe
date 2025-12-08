@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export default function ImageSection({
@@ -21,10 +22,11 @@ export default function ImageSection({
                     <div className="w-full lg:w-1/2 relative group">
                         <div className="absolute inset-0 bg-primary-600 rounded-sm transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
                         <div className="relative h-[400px] w-full overflow-hidden rounded-sm shadow-xl">
-                            <img
+                            <Image
                                 src={imageSrc}
                                 alt={title}
-                                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                                fill
+                                className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                             />
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                         </div>
