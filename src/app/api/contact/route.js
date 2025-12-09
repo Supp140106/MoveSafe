@@ -7,10 +7,12 @@ export async function POST(request) {
 
         // Create transporter with Gmail
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'smtp.hostinger.com',
+            port: 465,
+            secure: true,
             auth: {
-                user: process.env.EMAIL_USER || 'supbuisdas@gmail.com',
-                pass: process.env.EMAIL_PASS || 'lmlriagdtbjblafq',
+                user: process.env.EMAIL_USER || 'info@movesafepacker.com',
+                pass: process.env.EMAIL_PASS || 'NaamtoSunaiHoga',
             },
         });
 
@@ -32,7 +34,7 @@ export async function POST(request) {
                     <tr>
                         <td style="background: linear-gradient(135deg, #1f2937 0%, #374151 100%); padding: 40px 30px; text-align: center;">
                             <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
-                                🚚 MoveSafe Packers
+                                🚚 MoveSafe Packer
                             </h1>
                             <p style="color: #9ca3af; margin: 10px 0 0 0; font-size: 14px;">
                                 New Contact Inquiry Received
@@ -154,10 +156,10 @@ export async function POST(request) {
                     <tr>
                         <td style="background-color: #f9fafb; padding: 24px 30px; text-align: center; border-top: 1px solid #e5e7eb;">
                             <p style="margin: 0 0 8px 0; color: #6b7280; font-size: 13px;">
-                                This email was sent from your MoveSafe Packers website contact form.
+                                This email was sent from your MoveSafe Packer website contact form.
                             </p>
                             <p style="margin: 0; color: #9ca3af; font-size: 12px;">
-                                © ${new Date().getFullYear()} MoveSafe Packers. All rights reserved.
+                                © ${new Date().getFullYear()} MoveSafe Packer. All rights reserved.
                             </p>
                         </td>
                     </tr>
@@ -172,8 +174,8 @@ export async function POST(request) {
 
         // Email options
         const mailOptions = {
-            from: `"MoveSafe Packers" <${process.env.EMAIL_USER || 'supbuisdas@gmail.com'}>`,
-            to: process.env.EMAIL_TO || 'suppritdas@gmail.com',
+            from: `"MoveSafe Packer" <${process.env.EMAIL_USER || 'info@movesafepacker.com'}>`,
+            to: process.env.EMAIL_TO || 'support@movesafepacker.com',
             subject: `🚚 New Inquiry: ${serviceType} - ${fullName}`,
             html: htmlTemplate,
             replyTo: emailAddress,

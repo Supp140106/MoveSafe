@@ -15,10 +15,12 @@ export async function POST(request) {
 
         // Create transporter with Gmail (same config as contact form)
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'smtp.hostinger.com',
+            port: 465,
+            secure: true,
             auth: {
-                user: process.env.EMAIL_USER || 'supbuisdas@gmail.com',
-                pass: process.env.EMAIL_PASS || 'lmlriagdtbjblafq',
+                user: process.env.EMAIL_USER || 'info@movesafepacker.com',
+                pass: process.env.EMAIL_PASS || 'kkkiran',
             },
         });
 
@@ -40,7 +42,7 @@ export async function POST(request) {
                     <tr>
                         <td style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); padding: 40px 30px; text-align: center;">
                             <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px;">
-                                🚚 MoveSafe Packers
+                                🚚 MoveSafe Packer
                             </h1>
                             <p style="color: #fecaca; margin: 10px 0 0 0; font-size: 14px;">
                                 New Quote Request Received
@@ -167,8 +169,8 @@ export async function POST(request) {
 
         // Email options
         const mailOptions = {
-            from: `"MoveSafe Packers" <${process.env.EMAIL_USER || 'supbuisdas@gmail.com'}>`,
-            to: process.env.EMAIL_TO || 'suppritdas@gmail.com',
+            from: `"MoveSafe Packer" <${process.env.EMAIL_USER || 'info@movesafepacker.com'}>`,
+            to: process.env.EMAIL_TO || 'support@movesafepacker.com',
             subject: `🚚 New Quote Request: ${pickupCity} → ${dropCity}`,
             html: htmlTemplate,
         };

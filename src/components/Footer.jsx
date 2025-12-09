@@ -104,7 +104,10 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-[#082f49] font-medium">
                             <li className="flex items-start">
                                 <MapPin className="w-5 h-5 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
-                                <span>Shop No. 12, Andheri-Kurla Road, Sakinaka, Andheri East, Mumbai, Maharashtra 400072</span>
+                                <span>Near PNB Bank,
+                                    90 Feet Road, Sakinaka
+                                    Andheri-East ,Mumbai
+                                    400072</span>
                             </li>
                             <li className="flex items-center">
                                 <Phone className="w-5 h-5 text-primary-600 mr-3 flex-shrink-0" />

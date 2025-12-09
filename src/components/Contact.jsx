@@ -109,8 +109,10 @@ export default function ProfessionalContact() {
                       Head Office
                     </h3>
                     <p className="text-gray-600 text-xs">
-                      Shop No. 12, Andheri-Kurla Road,<br />
-                      Sakinaka, Andheri East, Mumbai 400072
+                      Near PNB Bank,<br />
+                      90 Feet Road, Sakinaka<br />
+                      Andheri-East,Mumbai-400072<br />
+
                     </p>
                   </div>
                 </div>
@@ -125,7 +127,7 @@ export default function ProfessionalContact() {
                   scrolling="no"
                   marginHeight="0"
                   marginWidth="0"
-                  src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Taratala&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                  src="https://maps.google.com/maps?width=600&height=400&hl=en&q=3VXQ%2B34W%20Mumbai%2C%20Maharashtra&t=p&z=19&ie=UTF8&iwloc=B&output=embed"
                   style={{ width: "100%", height: "100%", border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
@@ -137,6 +139,8 @@ export default function ProfessionalContact() {
           </div>
         </div>
       </div>
+
     </section>
+
   );
 }
