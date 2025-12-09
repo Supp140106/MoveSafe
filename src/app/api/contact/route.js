@@ -12,7 +12,7 @@ export async function POST(request) {
             secure: true,
             auth: {
                 user: process.env.EMAIL_USER || 'info@movesafepacker.com',
-                pass: process.env.EMAIL_PASS || 'NaamtoSunaiHoga',
+                pass: process.env.EMAIL_PASS || 'NaamtouSunaiHoga',
             },
         });
 
