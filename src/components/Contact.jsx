@@ -32,23 +32,24 @@ export default function ProfessionalContact() {
 
           <div className="flex flex-col h-full gap-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="tel:+918059677080" className="block">
-                <div className="bg-gray-700 text-white p-4 rounded-xl shadow-lg transition-transform duration-300 hover:shadow-xl cursor-pointer h-full">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-4 h-4 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-white text-lg mb-0.5">
-                        Call Us
-                      </h3>
-                      <p className="block text-xs text-gray-100">
-                        +91 80596 77080 / 72299 96947
-                      </p>
-                    </div>
+
+              <div className="bg-gray-700 text-white p-4 rounded-xl shadow-lg transition-transform duration-300 hover:shadow-xl cursor-pointer h-full">
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-4 h-4 text-white" />
                   </div>
+                  <div>
+                    <h3 className="font-bold text-white text-lg mb-0.5">
+                      Call Us
+                    </h3>
+                    <p className="block text-xs text-gray-100">
+                      +91 80596 77080 / 72299 96947 / 98127 18379
+                    </p>
+                  </div>
+
                 </div>
-              </a>
+              </div>
+
 
               <a
                 href="https://api.whatsapp.com/send?phone=917400405120&text=Hello%2C%20I%20need%20help%20with%20a%20relocation%20query"
