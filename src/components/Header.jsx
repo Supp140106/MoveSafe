@@ -33,6 +33,11 @@ export default function Header() {
         <div className="flex items-center justify-between py-2">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
+            <img
+              src="/images/companyimage.png"
+              alt="MoveSafe Logo"
+              className="w-15 h-15 object-contain"
+            />
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold text-white leading-none tracking-tight">
                 MoveSafe<span className="text-primary-600">Packer</span>

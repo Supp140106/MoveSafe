@@ -27,6 +27,11 @@ export const metadata = {
     "reliable parcel delivery",
     "fastest courier Mumbai",
   ],
+  icons: {
+    icon: "/images/companyimage.png",
+    shortcut: "/images/companyimage.png",
+    apple: "/images/companyimage.png",
+  },
   authors: [{ name: "MoveSafe Packers & Movers" }],
   creator: "MoveSafe Packers & Movers",
   publisher: "MoveSafe Packers & Movers",
@@ -109,7 +114,7 @@ const jsonLd = {
   description:
     "Leading packers and movers and package delivery service based in Mumbai. We specialize in sending parcels, household goods, and vehicles from Mumbai to all over India.",
   url: "https://Movesafepacker.com",
-  logo: "https://Movesafepacker.com/logo.png",
+  logo: "https://Movesafepacker.com/images/companyimage.png",
   image: "https://Movesafepacker.com/og-image.png",
   telephone: "+91-8059677080",
   email: "info@Movesafepacker.com",
@@ -211,8 +216,6 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1f2937" />
         <script
