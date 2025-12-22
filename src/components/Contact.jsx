@@ -43,7 +43,8 @@ export default function ProfessionalContact() {
                       Call Us
                     </h3>
                     <p className="block text-xs text-gray-100">
-                      +91 80596 77080 / 72299 96947 / 98127 18379
+                      +91 80596 77080 /
+                      90632 71857 /  98127 18379 / 7400405120
                     </p>
                   </div>
 

@@ -36,7 +36,7 @@ export default function Header() {
             <img
               src="/images/companyimage.png"
               alt="MoveSafe Logo"
-              className="w-15 h-15 object-contain"
+              className="w-16 h-16 object-contain"
             />
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold text-white leading-none tracking-tight">
@@ -69,7 +69,8 @@ export default function Header() {
                 href="tel:+918059677080"
                 className="text-sm font-bold text-white hover:text-primary-600 transition-colors"
               >
-                +91 80596 77080 / 72299 96947
+                +91 80596 77080 /
+                90632 71857
               </a>
             </div>
             <Link href="/contact" className="btn-primary text-sm px-6 py-2.5">
